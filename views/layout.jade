@@ -1,0 +1,21 @@
+doctype
+html
+  head
+    title #{title} - ADC
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/slick/slick.css')
+    link(rel='stylesheet', href='/slick/slick-theme.css')
+    block links
+  body
+    header
+      nav(id='globalheader', role='navigation')
+        ul.nav-list
+          li: a(href="/")= "AppDeveloperClub"
+          li: a(href="/")= "Home"
+          li: a(href="#")= "Team"
+          li: a(href="#")= "Contact"
+
+    block content
+
+    script(type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js")
+    block scripts

@@ -1,0 +1,252 @@
+/*
+ * Import nib
+ */
+/*
+ * Grab a custom font from Google
+ */
+/*
+ * Nib provides a CSS reset
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+/*
+ * Store the main color and
+ * background color as variables
+ */
+body {
+  position: relative;
+  color: #444;
+  background-color: #fff;
+  font-style: normal;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}
+#globalheader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: rgba(0,0,0,0.6);
+  font-size: 16px;
+}
+#globalheader ul {
+  display: block;
+  width: 100%;
+  height: 46px;
+  text-align: center;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#globalheader ul li {
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#globalheader ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+#globalheader ul li a:hover {
+  color: #55acee;
+}
+.container {
+  width: 100%;
+}
+.registration {
+  display: block;
+  padding: 50px;
+  height: 630px;
+  text-align: center;
+  background-color: #55acee;
+  border-bottom: 1px solid #157ece;
+}
+.registration .collapsable {
+  display: block;
+  margin: 20px;
+}
+.section {
+  padding: 5px;
+  margin: 10px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.carousel {
+  display: block;
+  height: 630px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+/*
+   * Note the use of the `main-color`
+   * variable and the `darken` function
+   */
+  background-color: #55acee;
+  border-bottom: 1px solid #157ece;
+  text-shadow: 0px -1px 0px #157ece;
+}
+.carousel .carousel-item {
+  line-height: 630px;
+}
+.main-content {
+  float: left;
+  width: 300px;
+}
+.main-content p {
+  margin-bottom: 20px;
+}
+.sidebar {
+  float: left;
+  width: 200px;
+}
+.sidebar .widget {
+/*
+     * Note the lack of vendor
+     * prefixes here. Nib will
+     * add them for us
+     */
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
+  box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
+}
+.sidebar .widget h1 {
+  font-family: 'Quicksand';
+  margin: 13px 10px 4px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ddd;
+  -webkit-border-radius: 2px 2px 0px 0px;
+  border-radius: 2px 2px 0px 0px;
+  margin-bottom: 10px;
+}
+.sidebar .widget p {
+  font-size: 13px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+p {
+  line-height: 1.8;
+}
+.hidden {
+  display: none;
+}
+footer {
+  width: 500px;
+  margin: 50px auto;
+  border-top: 1px dotted #ccc;
+  padding-top: 5px;
+  font-size: 13px;
+}

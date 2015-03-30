@@ -1,0 +1,69 @@
+extend layout
+
+block links
+  link(rel='stylesheet', href='/stylesheets/hackathon.css')
+
+block content
+  .registration
+
+    #aboutSection.section
+      #aboutHeader about
+      #about Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    #register-button.section register
+
+      // REGISTER USER
+      #registerUser
+        fieldset
+          input#inputFirstName(type='text', placeholder='First Name')
+          input#inputLastName(type='text', placeholder='Last Name')
+          input#inputEmail(type='text', placeholder='Email')
+          button#btnRegisterUser Register
+      // /REGISTER USER
+      //- form(id="register-form" class="hidden")
+      //-   #form-name.entry first name:
+      //-     input(type="text")
+      //-   #form-name.entry last name:
+      //-     input(type="text")
+      //-   #form-email.entry email:
+      //-     input(type="text")
+      //-   #form-team
+      //-   button(id="add-team-member") add team member
+      //-   #form-submit
+      //-     input(type="submit" value="submit" id="register-submit")
+
+    #createTeamSection.section 
+      #createTeamHeader create team
+
+      // CREATE TEAM
+      #createTeam
+        fieldset
+          input#inputCreateTeamName(type='text', placeholder='Team Name')
+          input#inputCreateTeamEmail(type='text', placeholder='Your Email')
+          #inputTeamMembers
+          button#btnAddTeamMember Invite Team Member
+          button#btnCreateTeam Create Team
+      // /CREATE TEAM
+
+    #joinTeamSection.section 
+      #joinTeamHeader join team
+      // JOIN TEAM
+      #joinTeam
+        fieldset
+          input#inputJoinTeamName(type='text', placeholder='Joining Team Name')
+          input#inputJoinTeamEmail(type='text', placeholder='Your Email')
+          button#btnJoinTeam Join Team
+      // /JOIN TEAM
+
+
+block scripts
+  script(type="text/javascript" src="/javascripts/handlebars-v3.0.0.js")
+  script(type="text/javascript" src="/javascripts/hackathon.js")
+    
+  script(id="NewTeamMemberTemplate" type="text/x-handlebars-template")
+    div(id="teamMember{{id}}")
+      input(id="inputTeamMember{{id}}Email" type='text', placeholder='Email to Invite')
+      button.removeTeamMember(id="btnRemoveTeamMember{{id}}") remove
+    //- .entry team member email:
+    //-   input(type="text")
+    //-   button(id="remove-team-member") remove
