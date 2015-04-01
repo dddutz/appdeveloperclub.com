@@ -1,0 +1,10 @@
+.container {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  text-align: center;
+}
+.section {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

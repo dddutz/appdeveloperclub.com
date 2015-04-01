@@ -18,7 +18,7 @@ global-reset()
  * background color as variables
  */
 main-color = #55ACEE
-background-color = white
+background-color = black
 
 centerVertical()
   position relative
@@ -26,7 +26,7 @@ centerVertical()
   -webkit-transform translateY(-50%)
   -ms-transform translateY(-50%)
   transform translateY(-50%)
-  
+
 preserve3d()
   -webkit-transform-style preserve-3d
   -moz-transform-style preserve-3d
@@ -34,126 +34,105 @@ preserve3d()
 
 body
   position relative
-  color #444
-  background-color background-color
+  color white
+  // background-color background-color
+  // background url("../images/background.jpg") no-repeat center center fixed
+  background-image url("../images/background.png")
   font-style normal
   font-family 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'
-  
+
 #globalheader
   position absolute
   top 0
   left 0
   width 100%
   z-index 9999
-  background rgba(0, 0, 0, 0.6)
+  background rgba(0, 0, 0, 0.5)
+  box-shadow 0px 0px 60px #4099FF
   font-size 16px
-  
+
   ul
     display block
     width 100%
     height 46px
     text-align center
     preserve3d()
-    
+
     li
       display inline-block
       padding 0 30px
       centerVertical()
-      
+
       a
         text-decoration none
         color white
-        
+
         &:hover
-          color main-color
+          color rgb(39, 86, 154)
 
 .container
   width 100%
-  
-.registration
-  display block
-  padding 50px
-  height 630px
-  
-  text-align center
-  background-color main-color
-  border-bottom 1px solid darken(main-color, 30%)
 
-  .collapsable
-    display block
-    margin 20px
-    
 .section
-  padding 5px
-  margin 10px
-  
-  background rgba(0, 0, 0, 0.6)
-  color white
-  
-  border-radius 10px
-
-.carousel
   display block
-  height 630px
-  preserve3d()
-  
-  color #fff
-  font-size 25px
-  text-align center
+  width 980px
+  margin-left auto
+  margin-right auto
+  background rgba(0, 0, 0, 0.6)
+  box-shadow 0px 0px 60px #4099FF
+  border-radius 10px
+  margin-bottom 50px
 
-  /*
-   * Note the use of the `main-color`
-   * variable and the `darken` function
-   */
-  background-color main-color
-  border-bottom 1px solid darken(main-color, 30%)
-  text-shadow 0px -1px 0px darken(main-color, 30%)
-  
-  .carousel-item
-    line-height 630px
+  .header
+    padding 15px
 
-.main-content
-  float left
-  width 300px
-
-  p
-    margin-bottom 20px
-
-.sidebar
-  float left
-  width 200px
-
-  .widget
-
-    /*
-     * Note the lack of vendor
-     * prefixes here. Nib will
-     * add them for us
-     */
-    border-radius 3px
-    border 1px solid #ccc
-    margin-left 20px
-    background-color background-color
-    box-shadow inset 0px 0px 0px 3px rgba(#fff, 0.8), 0px 3px 0px -2px rgba(#000, 0.1)
-
-    h1
-      font-family 'Quicksand'
-      margin 13px 10px 4px
-      padding-bottom 10px
-      border-bottom 1px dotted #ddd
-      border-radius 2px 2px 0px 0px
-      margin-bottom 10px
+  .content
+    width 780px
+    margin-left 100px
+    margin-right 100px
 
     p
-      font-size 13px
-      padding 0 10px
-      margin-bottom 10px
+      padding-top 10px
+      padding-bottom 10px
+      line-height 1.8
 
-p
-  line-height 1.8
-  
+.prompt
+  margin 30px
+  input
+    margin 5px
+    display block
+    width 300px
+    margin-left auto
+    margin-right auto
+  textarea
+    margin 10px
+    display block
+    width 300px
+    height 100px
+    resize vertical
+    margin-left auto
+    margin-right auto
+
+.button
+  color #4099FF
+  padding 20px
+
+  &:hover
+    color rgb(39, 86, 154)
+    cursor pointer
+
 .hidden
   display none
+
+a
+  text-decoration none
+  color #4099FF
+
+  &:hover
+    color rgb(39, 86, 154)
+
+h1
+  padding 20px
 
 footer
   width 500px

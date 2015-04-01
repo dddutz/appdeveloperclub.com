@@ -104,8 +104,8 @@ a img {
  */
 body {
   position: relative;
-  color: #444;
-  background-color: #fff;
+  color: #fff;
+  background-image: url("../images/background.png");
   font-style: normal;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 }
@@ -115,7 +115,9 @@ body {
   left: 0;
   width: 100%;
   z-index: 9999;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0px 0px 60px #4099ff;
+  box-shadow: 0px 0px 60px #4099ff;
   font-size: 16px;
 }
 #globalheader ul {
@@ -149,99 +151,75 @@ body {
   color: #fff;
 }
 #globalheader ul li a:hover {
-  color: #55acee;
+  color: #27569a;
 }
 .container {
   width: 100%;
 }
-.registration {
-  display: block;
-  padding: 50px;
-  height: 630px;
-  text-align: center;
-  background-color: #55acee;
-  border-bottom: 1px solid #157ece;
-}
-.registration .collapsable {
-  display: block;
-  margin: 20px;
-}
 .section {
-  padding: 5px;
-  margin: 10px;
+  display: block;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
   background: rgba(0,0,0,0.6);
-  color: #fff;
+  -webkit-box-shadow: 0px 0px 60px #4099ff;
+  box-shadow: 0px 0px 60px #4099ff;
   -webkit-border-radius: 10px;
   border-radius: 10px;
+  margin-bottom: 50px;
 }
-.carousel {
-  display: block;
-  height: 630px;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  color: #fff;
-  font-size: 25px;
-  text-align: center;
-/*
-   * Note the use of the `main-color`
-   * variable and the `darken` function
-   */
-  background-color: #55acee;
-  border-bottom: 1px solid #157ece;
-  text-shadow: 0px -1px 0px #157ece;
+.section .header {
+  padding: 15px;
 }
-.carousel .carousel-item {
-  line-height: 630px;
+.section .content {
+  width: 780px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
-.main-content {
-  float: left;
-  width: 300px;
-}
-.main-content p {
-  margin-bottom: 20px;
-}
-.sidebar {
-  float: left;
-  width: 200px;
-}
-.sidebar .widget {
-/*
-     * Note the lack of vendor
-     * prefixes here. Nib will
-     * add them for us
-     */
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  margin-left: 20px;
-  background-color: #fff;
-  -webkit-box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
-  box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
-}
-.sidebar .widget h1 {
-  font-family: 'Quicksand';
-  margin: 13px 10px 4px;
+.section .content p {
+  padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px dotted #ddd;
-  -webkit-border-radius: 2px 2px 0px 0px;
-  border-radius: 2px 2px 0px 0px;
-  margin-bottom: 10px;
-}
-.sidebar .widget p {
-  font-size: 13px;
-  padding: 0 10px;
-  margin-bottom: 10px;
-}
-p {
   line-height: 1.8;
+}
+.prompt {
+  margin: 30px;
+}
+.prompt input {
+  margin: 5px;
+  display: block;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.prompt textarea {
+  margin: 10px;
+  display: block;
+  width: 300px;
+  height: 100px;
+  resize: vertical;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button {
+  color: #4099ff;
+  padding: 20px;
+}
+.button:hover {
+  color: #27569a;
+  cursor: pointer;
 }
 .hidden {
   display: none;
+}
+a {
+  text-decoration: none;
+  color: #4099ff;
+}
+a:hover {
+  color: #27569a;
+}
+h1 {
+  padding: 20px;
 }
 footer {
   width: 500px;

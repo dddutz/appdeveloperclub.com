@@ -1,10 +1,40 @@
 extend layout
+
+block links
+  link(rel='stylesheet', href='/stylesheets/index.css')
+
 block content
-  .carousel
-    a.carousel-item(href="/hackathon") Join the Team
-    a(class="carousel-item") bye this is also text
-    a(class="carousel-item") why this isn't text
+  .container
+    #aboutSection.section
+      #aboutHeader.header.button About
+      #aboutContent.content
+        p The App Developer Club is a new initiative at Stanford. We're seeking to build a team of passionate and dedicated people who want to explore their interests in web and mobile application development. We're looking for coders, designers, and artists. The club is primarily project-based, and we're planning on working with the university, non-profits, and industry. We will be building beautiful apps and writing code that could find its place in a museum. At its core, this club is about having fun and becoming the best web and mobile developers we can.
+        p This spring, we're looking for an initial group of committed and ambitious leaders. We will be debuting with a pilot program in order to provide the best experience possible next year. If you're interested in joining the initial group, please apply below. We will be interviewing the top candidates and selecting the initial group on a rolling basis.
+        p We're planning on officially launching the club next year and having it open to everyone without requiring any background experience.
+        p Get excited.
+
+    #registerSection.section
+      #registerHeader.header.button Apply
+      #registerContent.content.hidden
+        fieldset
+          .prompt
+            input#inputFirstName(type='text', placeholder='First Name')
+            input#inputLastName(type='text', placeholder='Last Name')
+            input#inputEmail(type='text', placeholder='Email')
+            input#inputYear(type='text', placeholder='Class (e.g. sophomore)')
+          .prompt List relevant coursework (e.g. CS142, CS193P).
+            textarea#inputRelevantCoursework
+          .prompt List relevant languages or frameworks you're familiar with (e.g. Swift, Node.js, Android).
+            textarea#inputRelevantLanguages
+          .prompt Provide any relevant leadership experience.
+            textarea#inputLeadership
+          .prompt List any relevant past projects, especially anything related to web or mobile development.
+            textarea#inputProjects
+          .prompt If you would like to submit a resume or any additional information, please send it to
+            a(href='mailto:appdeveloperclub@gmail.com')  appdeveloperclub@gmail.com
+          .prompt List any ideas for web or mobile applications you would like to see built or improved.
+            textarea#inputIdeas
+          #btnRegisterSubmit.button Submit
 
 block scripts
-  script(type="text/javascript" src="/slick/slick.min.js")
-  script(type="text/javascript" src="/javascripts/script.js")
+  script(type="text/javascript" src="/javascripts/index.js")
